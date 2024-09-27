@@ -1,0 +1,47 @@
+#app {
+  display: grid;
+  grid-template-columns: 51.25% 48.75%;
+
+  height: 100vh;
+
+  overflow: hidden;
+}
+
+main {
+  padding: 4rem;
+  overflow: auto;
+
+  & .main-container {
+    margin-left: auto;
+    max-width: 33rem;
+  }
+
+  & .back {
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
+    margin-bottom: 1.5rem;
+  }
+
+  & h1 {
+    font: 600 1.5rem/1.25 var(--font-family);
+    margin-bottom: 0.5rem;
+  }
+}
+
+aside {
+  background-color: var(--surface-secondary);
+  padding: 4em;
+  overflow: hidden;
+
+  & .aside-container {
+    max-width: 31rem;
+  }
+  & h2 {
+    font: 600 2.5rem/1.25 var(--font-family);
+    margin-block: .5rem;
+    & span {
+      color: var(--text-highlight);
+    }
+  }
+}
