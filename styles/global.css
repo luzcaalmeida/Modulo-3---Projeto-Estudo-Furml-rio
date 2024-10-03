@@ -22,8 +22,8 @@
 
   --text-primary: #292524;
   --text-secundary: #57534e;
-  --text-tertiary: #e43a12;
-  --text-highlight: #E43A12;
+  --text-tertiary: #8f8881;
+  --text-highlight: #e43a12;
 
   --surface-primary: #ffffff;
   --surface-secondary: #fee7d6;
@@ -42,7 +42,7 @@ body {
   color: var(--text-secundary);
 }
 
-
-h1,h2 {
+h1,
+h2 {
   color: var(--text-primary);
 }

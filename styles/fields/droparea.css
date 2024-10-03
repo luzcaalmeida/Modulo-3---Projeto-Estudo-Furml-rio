@@ -1,0 +1,46 @@
+.dropzone {
+  border-radius: 0.25rem;
+  border: 1px dashed var(--stroke-default);
+
+  display: grid;
+  justify-items: center;
+  gap: 0.5rem;
+
+  padding: 1.75rem 1rem;
+
+  text-align: center;
+
+  position: relative;
+
+  p {
+    color: #a8a29e;
+  }
+
+  & input {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+
+    inset: 0;
+    opacity: 0;
+  }
+
+  &:hover,
+  &:has(input:focus) {
+    border-width: 2px;
+    border-color: var(--stroke-highlight);
+    background-color: var(--surface-secondary);
+
+    & p {
+      color: var(--text-tertiary);
+    }
+  }
+
+  img {
+    width: 3rem;
+  }
+}
+
+#birthfile {
+  border: none;
+}
