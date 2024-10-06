@@ -119,7 +119,80 @@
                 </div>
                 <div class="input-wrapper flex-1">
                   <label for="state">Estado</label>
-                  <input type="text" name="state" id="state" disabled/>
+                  <input type="text" name="state" id="state" disabled />
+                </div>
+              </div>
+            </fieldset>
+
+            <fieldset class="infoparents">
+              <legend>Informações do responsável</legend>
+              <div class="input-wrapp">
+                <label for="parentname">Nome do responsável</label>
+                <input
+                  type="text"
+                  name="parentname"
+                  id="parentname"
+                  placeholder="Insira seu nome completo"
+                />
+                <small
+                  >Principal responsável legal e contato de emergência</small
+                >
+              </div>
+              <div class="input-wrapper">
+                <label for="phonenumber">Telefone</label>
+                <input
+                  type="text"
+                  id="phonenumber"
+                  name="phonenumber"
+                  placeholder="(44) 99914-1121"
+                />
+              </div>
+
+              <div class="input-wrapper">
+                <label for="email">E-mail</label>
+                <input
+                  type="email"
+                  name="email"
+                  id="email"
+                  placeholder="Insina seu email (ex: meuemail@email.com)"
+                  required
+                />
+                <small class="alert-text"
+                  ><img
+                    src="assets/icons/alert-circle.svg"
+                    alt="Alerta"
+                  />Insira um e-mail válido</small
+                >
+              </div>
+            </fieldset>
+
+            <fieldset class="register-option">
+              <legend>Opções de matrícula</legend>
+              <div class="input-wrapper">
+                <label>Selecione o turno de estudo:</label>
+                <div class="radio-wrapper">
+                  <div class="radio-inner">
+                    <input
+                      type="radio"
+                      name="shift"
+                      id="morning"
+                      value="morning"
+                    />
+                    <img src="assets/icons/sun-cloud-02.svg" alt="" />
+                    <label for="shift">Manhã</label>
+                  </div>
+                </div>
+                <div class="radio-wrapper">
+                  <div class="radio-inner">
+                    <input
+                      type="radio"
+                      name="shift"
+                      id="evening"
+                      value="evening"
+                    />
+                    <img src="assets/icons/sun-02.svg" alt="" />
+                    <label for="shift">Tarde</label>
+                  </div>
                 </div>
               </div>
             </fieldset>

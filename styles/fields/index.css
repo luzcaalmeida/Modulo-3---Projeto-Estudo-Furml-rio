@@ -1,4 +1,6 @@
 @import url(droparea.css);
+@import url(parent.css);
+@import url(register-option.css);
 
 input,
 textarea,
@@ -56,15 +58,22 @@ select {
 }
 
 .input-wrapper:has([disabled]) {
-  opacity: .5;
+  opacity: 0.5;
 }
 
 input {
-  &[disabled]
-  {
+  &[disabled] {
     background-color: var(--surface-disabled);
     border: 1px solid var(--stroke-default);
     color: var(--text-primary);
   }
 
+
+
+  &:invalid {
+    border: 0.125rem solid var(--semantic-error);
+  }
+  &:valid + .alert-text{
+    display: none;
+  }
 }

@@ -1,0 +1,8 @@
+.alert-text {
+  margin-top: .25rem;
+  color: var(--semantic-error);
+  display: flex;
+  align-items: center;
+  
+  gap: 0.25rem;
+}
