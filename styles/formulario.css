@@ -20,3 +20,10 @@ fieldset + fieldset {
   margin-top: 3rem;
 }
 
+.actions-wrapper {
+  padding-top: 3rem;
+
+  display: flex;
+  gap: 1rem;
+
+}
